@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Header } from "./Components";
-import { About, Home, Todos, User } from "./Pages";
+import { About, Home, Todos, User, Error, Posts   } from "./Pages";
 
 function App() {
   return (
@@ -13,10 +13,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<User />} />
+        {/* <Route path="/users/:id/*" element={<Error />} /> */}
+        <Route path="/users/:userId" element={<Posts />} />
         <Route path="/todos" element={<Todos />} />
+        <Route path="*" element={<Error />}/>
       </Routes>
     </div>
   );
 }
+
 
 export default App;

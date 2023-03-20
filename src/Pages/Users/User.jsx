@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Loading } from "../../Components";
 import './User.css'
 
@@ -44,7 +45,9 @@ export const User = () => {
       user.odam.length > 0 && <ul>
         {
           user.odam.map(item => (
-            <li key={item.id}>{item.name}</li>
+            <Link className="user" to={`/users/${item.id}`} key={item.id}>
+              {item.name}
+            </Link>
           )) 
         }
       </ul>

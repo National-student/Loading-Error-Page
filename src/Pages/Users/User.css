@@ -1,0 +1,9 @@
+.user {
+    display: block;
+    max-width: 300px;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border: 2px solid rgb(39, 89, 53);
+    padding: 10px;
+}
