@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Loading } from "../../Components";
 
 export const Posts = () => {
@@ -40,12 +40,13 @@ export const Posts = () => {
         <ul>
           {posts.data.map((post) => (
             <li key={post.id}>
-              <h3>{post.title}</h3>
+              <Link to={`/users/postId/${post.id}`}>{post.title}</Link>
               <p>{post.body}</p> <br />
             </li>
           ))}
         </ul>
       )}
+
     </div>
   );
 };
