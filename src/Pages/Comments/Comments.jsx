@@ -14,7 +14,7 @@ export const Comments = () => {
     const { postId } = useParams()
 
     React.useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/comments?postId=" + postId)
+        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
         .then(res => res.json())
         .then(data => setComment({
             ...comment,

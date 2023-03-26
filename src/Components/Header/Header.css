@@ -13,4 +13,13 @@
     padding: 10px 20px;
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.active--link {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
 }

@@ -1,0 +1,8 @@
+@import "./mixin.scss";
+@import "./fonts.scss";
+
+.lorem {
+    background-color: aqua;
+    color: $main--color;
+    font-family: 'Aladin';
+}
